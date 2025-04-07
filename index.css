@@ -1,0 +1,219 @@
+body {
+    font-family: League Spartan, Helvetica, sans-serif;
+    background: hsl(180, 31%, 95%);
+    font-size: .85rem;
+    margin: 0px; 
+    min-width: 320px; 
+}
+
+.header{
+    background-color: hsl(180, 29%, 50%);
+    height: 150px;
+    background-image: url("./images/bg-header-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    max-width: 720px;
+    margin: auto;  
+}
+
+#input-box{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-left: 20px; 
+    margin-bottom: 10px;
+    margin-top: -20px; 
+}
+
+#input-box>p{
+   text-align: right;
+}
+
+#clear-btn{
+    float: right; 
+    color: hsl(180, 29%, 50%);
+    font-weight: bold; 
+    padding-right: 20px; 
+    cursor: pointer; 
+}
+
+#clear-btn:hover{
+    text-decoration: underline;
+}
+
+.job-div{
+    background-color: white;
+    padding-left: 10px; 
+    color: hsl(180, 14%, 20%);
+    padding: 5px 10px;
+    margin-bottom: 10px; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.job-div:hover{
+    border-left: 5px solid hsl(180, 29%, 50%); 
+}
+
+.section-one{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+}
+
+.job-info{
+    margin-left: 25px;
+    text-align: left;  
+}
+
+.job-info>p{
+    margin: 0px;
+}
+
+.job-highlights{
+    display: flex; 
+    flex-direction: row; 
+    gap: 10px; 
+}
+
+.job-new{
+    display: inline-flex;
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    padding: 2.5px 10px 0px 10px; 
+    border-radius: 25px;  
+}
+
+.job-featured{
+    background-color: black;
+    color: white; 
+    padding: 2.5px 10px 0px 10px; 
+    border-radius: 25px;  
+}
+
+.job-details{
+   display: flex; 
+   flex-direction: row; 
+   gap: 10px;
+}
+
+.job-skills-div{
+    display: flex; 
+    flex-direction: row;
+    gap: 10px; 
+}
+
+.job-skills{
+    color: hsl(180, 29%, 50%);
+    cursor: pointer; 
+    background-color: hsl(180, 31%, 95%);
+    font-weight: bold; 
+    border-radius: 5px;
+}
+
+.button-skills{
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 31%, 95%);
+    padding: 5px 7px; 
+    font-weight: bold; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+.button-skills:hover{
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+}
+
+.job-company{
+    color: hsl(180, 29%, 50%);
+}
+
+.selected-skill{
+    display: inline-flex; 
+    flex-direction: row; 
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+.selected-skill-p{
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 31%, 95%); 
+    padding: 5px 7px; 
+    border-radius: 5px 0px 5px 5px;
+}
+
+.selected-skill-x{
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    padding: 5px 7px; 
+    border-radius: 5px 5px 5px 0px;
+    cursor: pointer;
+}
+
+.selected-skill-x:hover{
+    background-color: black;
+    color: white;
+}
+
+/* MEDIA QUERIES*/
+@media screen and (max-width: 720px) {
+  body{
+     font-size: 1.25rem;
+  }
+  
+  .container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .job-div {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 420px; 
+    margin-bottom: 50px;
+    padding-left: 20px; 
+  }
+
+  .section-one{
+    flex-direction: column;
+  }
+  
+  img{
+    position: relative;
+    bottom: 20px;
+    right: 100px; 
+    height: 85px; 
+    margin: -25px; 
+  }
+
+  .job-info{
+     padding-left: -10px;
+     margin-left: 0px; 
+}
+
+  .job-skills-div{
+    border-top: 1px solid black;
+     padding-top: 25px;
+     padding-bottom: 20px;
+     flex-wrap: wrap;
+     margin-right: 10px;  
+  }
+  
+  #input-box{
+    width: 430px;
+    margin-bottom: 50px; 
+  }
+}
